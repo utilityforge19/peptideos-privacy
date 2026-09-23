@@ -11,10 +11,10 @@
 
 <h1>PeptideOS Privacy Policy</h1>
 
-<p><strong>Last updated: June 22, 2026</strong></p>
+<p><strong>Last updated: September 23, 2026</strong></p>
 
 <p>
-PeptideOS ("the App") is a scheduling, organizational, tracking, reminder, and calculation tool intended for research workflow management. This Privacy Policy explains what information the App collects, how it is used, and how it is protected.
+PeptideOS ("the App") is a scheduling, organizational, tracking, reminder, and calculation tool intended for research workflow management. PeptideOS is not a medical device and does not diagnose, treat, cure, or prevent any medical condition. This Privacy Policy explains what information the App collects, how it is used, and how it is protected.
 </p>
 
 <p>
@@ -47,35 +47,43 @@ This information is used only for:
 PeptideOS does not sell, rent, or share your Google account information for advertising or marketing purposes.
 </p>
 
-<h2>2. App Data and Optional Cloud Backup</h2>
+<h2 id="app-data-and-cloud-backup">2. App Data, Health-Related Data, and Optional Cloud Backup</h2>
 
 <p>
-PeptideOS may store app-related data in Firebase cloud services when optional cloud backup features are used.
+Everything you enter in PeptideOS is stored on your device. It leaves your device only if you sign in with Google and turn on the optional cloud backup. The App works fully without an account and without cloud backup.
 </p>
 
 <p>
-Examples may include:
-</p>
-
-<ul>
-<li>Protocols</li>
-<li>Schedules</li>
-<li>Vial information</li>
-<li>App settings</li>
-<li>Organizational workflow data</li>
-</ul>
-
-<p>
-Cloud backup is used only for:
+When cloud backup is on, a copy of your app data is uploaded to Firebase Cloud Firestore under your account. This copy includes health-related information you have entered, such as:
 </p>
 
 <ul>
-<li>Backup and restore functionality</li>
-<li>Syncing your app data across your own devices</li>
+<li>Protocols, vials, doses, and schedules</li>
+<li>Dose logs and injection-site records</li>
+<li>Body weight, body measurements, and goal weight</li>
+<li>Profile details you chose to enter, such as name, sex, age, height, and activity level</li>
+<li>Vial costs and app settings</li>
 </ul>
 
 <p>
-Cloud backup is optional and tied to your authenticated account. The App remains usable without creating an account or enabling cloud backup.
+This data is used only to:
+</p>
+
+<ul>
+<li>Back up and restore your data</li>
+<li>Keep your data in sync across your own devices</li>
+</ul>
+
+<p>
+It is not used for advertising, marketing, analytics, or profiling, and it is not sold or shared with third parties.
+</p>
+
+<p>
+Backup data is encrypted in transit and is encrypted at rest by Google. Access is restricted by security rules so that only your signed-in account can read or write your backup. The backup is not end-to-end encrypted.
+</p>
+
+<p>
+If you never sign in, or you sign in but do not run a backup, none of this data is uploaded.
 </p>
 
 <h2>3. Purchases and Premium Features</h2>
@@ -172,6 +180,10 @@ If you choose to use optional cloud backup features and sign in to a Google acco
 All trial integrity data is transmitted using encrypted connections. PeptideOS does not sell, rent, or share this information with advertisers or third parties for marketing purposes.
 </p>
 
+<p>
+<strong>Retention after account deletion.</strong> When you delete your cloud backup and account (see Section 9), the trial integrity record is kept. It contains only the one-way hashed device identifier, the trial start date, and, if you had signed in, the internal Firebase user ID that the record was linked to. It does not contain your email address, your name, or any health-related or app data. It is kept solely to prevent repeated free trials and to protect the App's licensing system. You can ask us to delete this record by emailing the address in Section 12.
+</p>
+
 <h2>6. Information We Do Not Collect</h2>
 
 <p>
@@ -229,25 +241,50 @@ Sensitive entitlement and authentication-related local data are excluded from An
 Data transmitted through Firebase and Google services is encrypted in transit using industry-standard security practices.
 </p>
 
-<h2>9. Your Choices</h2>
+<h2 id="your-choices">9. Your Choices and Deleting Your Data</h2>
 
 <p>
 You may:
 </p>
 
 <ul>
-<li>Choose whether to sign in with Google</li>
-<li>Disable or avoid cloud backup features</li>
+<li>Use the App without signing in</li>
+<li>Sign in with Google without turning on cloud backup</li>
+<li>Turn off Auto Sync at any time</li>
 <li>Uninstall the App at any time</li>
-<li>Remove local app data through Android system settings</li>
+<li>Remove local app data through Android system settings or with "Clear All Data" in the App's Settings</li>
 </ul>
 
+<h3 id="delete-your-cloud-backup-and-account">Delete your cloud backup and account</h3>
+
 <p>
-You may also remove access through your Google account settings.
+<strong>In the App:</strong> open Settings and tap "Delete cloud backup &amp; account". This is available on every plan, including after the free trial has ended. If you are signed out, the App asks you to sign in first so it knows which data to delete.
 </p>
 
 <p>
-If you wish to request deletion of applicable cloud-stored data associated with your account or trial integrity records, you may contact the email address listed below.
+Confirming the deletion permanently:
+</p>
+
+<ul>
+<li>Deletes your cloud backup from Firebase Cloud Firestore</li>
+<li>Deletes your PeptideOS sign-in account (your Firebase Authentication user, including the stored email address and user ID)</li>
+<li>Revokes the App's access to your Google account</li>
+</ul>
+
+<p>
+Data stored on your phone is not affected. You can remove it separately with "Clear All Data" or by uninstalling the App. Deletion takes effect immediately and cannot be undone.
+</p>
+
+<p>
+<strong>Without the App:</strong> if you no longer have the App installed, email <a href="mailto:utilityforge19@proton.me">utilityforge19@proton.me</a> from the Google account you signed in with and ask us to delete your cloud backup and account. We will complete the request within 30 days.
+</p>
+
+<p>
+<strong>What is kept:</strong> only the trial integrity record described in Section 5.
+</p>
+
+<p>
+You may also remove the App's access at any time from your Google account settings.
 </p>
 
 <h2>10. Intended Audience</h2>
@@ -273,7 +310,7 @@ Material changes will be reflected by updating the "Last updated" date above.
 <h2>12. Contact</h2>
 
 <p>
-If you have questions about this Privacy Policy or would like to request deletion of applicable data, you may contact:
+If you have questions about this Privacy Policy or would like to request deletion of your data (see Section 9), you may contact:
 </p>
 
 <p>
